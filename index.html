@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./style.css">
+    <title>Tetris JS Game</title>
+    <link rel="shortcut icon" href="assets/tetris%20icon.ico">
+</head>
+<body>
+    <div class="main-sector">
+        <div class="game_board_wrap">
+            <img src="assets/The_Tetris_Company_logo.png" alt="" class="logo">
+            <div id="game_board"></div>
+        </div>
+        <button class="start-button button">START</button>
+    </div>
+    <div class="info-sector">
+        <div class="text-block">SCORE</div>
+        <div id="score-board">0</div>
+        <div class="text-block">DIFFICULTY</div>
+        <div class="difficulty-selector">
+<!--            <label for="difficulty">Difficulty:</label>-->
+            <select id="difficulty" class="select-box">
+                <option value="easy">Easy</option>
+                <option value="medium">Medium</option>
+                <option value="hard">Hard</option>
+                <option value="terrible">Terrible</option>
+            </select>
+        </div>
+    </div>
+    <div class="next-sector">
+        <div class="text-block">NEXT</div>
+        <div id="demo-board"></div>
+    </div>
+
+    <button id="sound_button" class="button"></button>
+    <button id="next_button" class="button"></button>
+
+    <script src="./script.js"></script>
+</body>
+</html>
